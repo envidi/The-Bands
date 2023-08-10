@@ -1,0 +1,886 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.d-f {
+    display: flex;
+
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.jfC {
+    justify-content: center;
+}
+
+.alC {
+    align-items: center;
+}
+
+.jfT {
+    justify-content: flex-start;
+}
+
+.jfB {
+    justify-content: space-between;
+}
+
+.clB {
+    color: black;
+}
+
+.clW {
+    color: white;
+}
+
+.bgB {
+    background-color: black;
+}
+
+.bgW {
+    background-color: rgb(255, 255, 255);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.m-l10 {
+    margin-left: 10px;
+}
+
+.m-l3 {
+    margin-left: 3px;
+}
+
+.d-b {
+    display: block;
+}
+
+.fl-r {
+    float: right;
+}
+
+.h-50px {
+    height: 50px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+/* --Begin-- */
+.header-website {
+    height: 46px;
+    position: fixed;
+    z-index: 10;
+}
+
+
+
+.contain-nav__menu {
+    width: 500px;
+    position: relative;
+
+}
+
+/* .contain-nav__search {
+    background-color: aqua;
+} */
+
+.ul-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.ul-menu>li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+.ul-menu>li>a {
+    text-decoration: none;
+    color: white;
+    line-height: 286%;
+    padding: 0 22.5px;
+
+    display: block;
+}
+
+.ul-menu>li a:hover {
+    color: #000;
+    background-color: #ccc;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.contain-nav__search {
+    justify-content: flex-end;
+}
+
+.contain-nav__search__iconSearch {
+
+    padding: 0 22.5px;
+    font-size: 20px;
+}
+
+.contain-nav__search__iconSearch:hover {
+    background-color: #f44336;
+
+}
+
+/* .li-more {
+    position: relative;
+} */
+
+.ul-more {
+    display: none;
+    background-color: white;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.ul-more>li {
+    display: block;
+    font-size: 14px;
+    line-height: 200%;
+    padding: 5px 25px;
+
+}
+
+.ul-menu>li:hover>.ul-more {
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+
+.ul-more>li:hover {
+    background-color: #ccc;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.contain-nav__menu__showMenu {
+
+    padding: 13.3px 16px;
+    font-size: 16px;
+    display: none;
+}
+
+.contain-nav__menu__showMenu:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#showMenu {
+    display: none;
+}
+
+.show-ul {
+    width: 135%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.show-ul__ul>li>a {
+    display: block;
+
+    background-color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.show-ul__ul>li>a:hover {
+    background-color: #ccc;
+    color: black;
+
+}
+
+
+
+.show-ul__ul>label {
+    text-decoration: none;
+    color: white;
+    display: block;
+
+    background-color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.show-ul__ul>label:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+input:checked~.show-ul {
+    display: block;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.overwite {
+    width: 100%;
+    height: 46px;
+}
+
+main {
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.banner {
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* .banner__img h2 {
+    height: 100%;
+
+
+
+} */
+
+.banner__img {
+    position: absolute;
+    height: 100%;
+}
+
+.banner__img h2 {
+    margin-top: -webkit-calc(40% - 30px);
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: -webkit-calc(5% - 30px);
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+.banner__img span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+
+
+.banner__img__desc {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+
+}
+
+
+.banner__img:nth-child(1) {
+    transform: translateX(0%);
+
+}
+
+
+.banner__img:nth-child(2) {
+    transform: translateX(-100%);
+
+
+}
+
+.banner__img:nth-child(3) {
+    transform: translateX(-200%);
+
+
+}
+
+
+.banner__img:nth-child(4) {
+    transform: translateX(-300%);
+
+
+}
+
+/* ------section the band------- */
+.the-band {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 75px;
+}
+
+.the-band__introduce {
+    padding: 0px 248px;
+    box-sizing: border-box;
+    margin-top: 80px;
+}
+
+.the-band__introduce h1 {
+    letter-spacing: 5px;
+    font-weight: 590;
+    font-size: 27px;
+    margin-bottom: 25px;
+
+}
+
+.the-band__introduce span {
+    font-style: italic;
+    color: #828282;
+    margin-bottom: 27px;
+    font-size: 15px;
+}
+
+
+.the-band__introduce__content {
+    width: 761px;
+
+    font-size: 15px;
+    line-height: 150%;
+    text-align: justify;
+
+
+}
+
+.the-band__name-img {
+    margin-top: 69px;
+    height: 100%;
+}
+
+.the-band__name-img__row {
+    width: 761px;
+    padding: 0 35px;
+    box-sizing: border-box;
+
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.the-band__name-img__row__col {
+    width: 23.3%;
+    height: 100%;
+
+
+}
+
+.the-band__name-img__row__col-name {
+    color: #000039;
+
+    width: 100%;
+
+    padding-bottom: 15px;
+}
+
+.the-band__name-img__row__col-img {
+    border-radius: 6px;
+
+    overflow: hidden;
+
+}
+
+/* -----section tour------- */
+.tour {
+    background-color: black;
+    /* height: 841px; */
+    padding: 80px 0px 80px 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contain__show-buy-ticket {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(8, 8, 8, 0.2);
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(-110%);
+    opacity: 0;
+}
+
+.show-buy-ticket {
+    width: 880px;
+    /* height: 500px; */
+    margin-top: 40px;
+    background-color: red;
+    transform: translateY(-110%);
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.show-buy-ticket.show {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.contain__show-buy-ticket.show {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.tour__date h2 {
+    font-size: 26px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+
+
+}
+
+.tour__date>span {
+    font-style: italic;
+    color: #929292;
+    margin-top: 26px;
+    font-size: 13px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+.tour__date__soldOut {
+
+    width: 770px;
+    margin-top: 30px;
+}
+
+.contain-tour__date__soldOut {
+    width: 100%;
+    /* padding: 0 246px; */
+    box-sizing: border-box;
+}
+
+
+
+.sold__month {
+    background-color: white;
+    border-bottom: 0.5px solid rgb(145, 145, 145, 0.3);
+    line-height: 200%;
+    padding: 5px 15px;
+    list-style: none;
+}
+
+
+
+.sold__out {
+    background-color: #f44336;
+    padding: 3px 8px;
+    margin-left: 15px;
+    font-size: 15px;
+    line-height: 100%;
+    display: inline-block;
+}
+
+.tour__date__soldOut {
+    height: 151px;
+    color: #757579;
+    font-size: 15px;
+}
+
+.sold__out-number {
+    border-radius: 50%;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-right: 20px;
+    margin-top: 2.5px;
+}
+
+.contain-row-ticket {
+    box-sizing: border-box;
+}
+
+.row-ticket {
+    max-width: 770px;
+    /* flex-wrap: wrap; */
+}
+
+.row-ticket__col {
+    width: 32%;
+    background-color: white;
+}
+
+.row-ticket__col__img {
+    background-color: black;
+    display: flex;
+    height: auto;
+}
+
+.row-ticket__col__img img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.row-ticket__col__img img:hover {
+    opacity: 0.6;
+}
+
+.row-ticket__col__content {
+    padding: 0 16px;
+}
+
+.row-ticket__col__content h4 {
+    margin-top: 17px;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+.row-ticket__col__content>span {
+    margin-bottom: 18px;
+    color: rgb(141, 140, 140);
+    font-size: 15px;
+}
+
+.row-ticket__col__content>p {
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.btn-ticket {
+    padding: 13px 16px 11px 16px;
+    background-color: black;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 14.7px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.btn-ticket>a {
+    text-decoration: none;
+    padding-top: 3px;
+}
+
+.btn-ticket:hover {
+    background-color: #ccc;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.row-close {
+    height: 40px;
+
+    justify-content: flex-end;
+
+}
+
+.close {
+    padding: 0px 25px;
+
+}
+
+.close:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.close>i {
+    font-size: 20px;
+}
+
+.contain-show-row-ticket {
+    height: 150px;
+    background-color: #009688;
+}
+
+
+
+.case-ticket h2 {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.case-ticket i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.form-buy-ticket {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 12px 15px;
+
+}
+
+.form-buy-ticket input {
+    margin-top: 20px;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+
+}
+
+.pay {
+    padding: 18px 0px;
+    border: none;
+    background-color: #009688;
+    font-size: 16px;
+    margin-top: 5px;
+    font-weight: 550;
+}
+
+.pay:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.pay>i {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.red-close {
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+.red-close>span>a {
+    color: rgb(0, 179, 255);
+}
+
+.red-btn__button {
+    padding: 8px 12px;
+    background-color: red;
+    border: none;
+    font-size: 16px;
+}
+
+.red-btn__button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.red-btn__button>i {
+    font-size: 17.5px;
+    margin-left: 3px;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.error.seek {
+    display: none;
+}
+
+.contact {
+    height: 459px;
+    background-color: white;
+    box-sizing: border-box;
+    padding-top: 85px;
+
+}
+
+.header-contact {
+    color: black;
+}
+
+.header-contact>h2 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.header-contact>span {
+    color: #a3a3a3;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.body-contact {
+    width: 770px;
+
+}
+
+.contain-body-contact {
+    box-sizing: border-box;
+}
+
+/* .contact__address {
+    background-color: blue;
+} */
+
+.contact__address>ul>li {
+    list-style: none;
+    padding: 4px 0px;
+    color: black;
+    font-size: 18px;
+}
+
+.contact__email {
+
+    height: 50px;
+    padding: 5px 0px 5px 5px;
+    box-sizing: border-box;
+}
+
+#name {
+    width: 100%;
+    margin-right: 5px;
+    border: 1px solid#cccccc;
+    outline: none;
+
+
+
+}
+
+#email1 {
+    width: 100%;
+    margin-left: 5px;
+    border: 1px solid#cccccc;
+    outline: none;
+
+
+}
+
+.contact__send-email input {
+    padding-left: 10px;
+
+
+
+}
+
+.contact__send-email {
+
+
+    box-sizing: border-box;
+}
+
+.input-message {
+    padding: 5px 0px 5px 5px;
+    box-sizing: border-box;
+    height: 50px;
+    padding-bottom: 5px;
+}
+
+#message {
+    flex: 1;
+    height: 100%;
+    border: 1px solid#cccccc;
+    outline: none;
+}
+
+.contact__address>ul>li>i {
+    margin-right: 15px;
+}
+
+.send-email-btn-row {
+
+    height: 100px;
+}
+
+.send-email-btn-row {
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.send-email-btn {
+    padding: 10px 20px;
+    background-color: black;
+    font-size: 16px;
+    border: none;
+}
+
+.send-email-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.map {
+    height: auto;
+
+
+}
+
+.map>img {
+    width: 100%;
+}
+
+footer {
+    height: 215px;
+    background-color: white;
+    padding-top: 70px;
+    box-sizing: border-box;
+}
+
+.icon__link i {
+    font-size: 20px;
+    color: rgb(103, 103, 103);
+    margin: 0px 5px 0 5px;
+}
+
+.icon__link>i:hover {
+    color: rgb(103, 103, 103, .6);
+}
+
+.icon__link {
+    margin-bottom: 20px;
+}
+
+footer>span {
+    font-size: 18px;
+    color: rgb(103, 103, 103);
+
+}
+
+footer>span>a {
+    font-size: 18px;
+    color: rgb(103, 103, 103);
+
+}

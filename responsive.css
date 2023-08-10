@@ -1,0 +1,153 @@
+/* ----------------Mobile---------------- */
+@media only screen and (max-width: 585px) {
+    .ul-menu {
+        display: none;
+
+    }
+
+    .contain-nav__menu__showMenu {
+        display: block;
+    }
+
+    .banner__img h2,
+    span {
+        display: none;
+    }
+
+    .the-band__introduce__content {
+        width: 100%;
+    }
+
+    .the-band__introduce {
+        padding: 0 18px;
+    }
+
+    .the-band__name-img__row {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 10px;
+    }
+
+    .the-band__name-img__row__col {
+        width: 100%;
+        height: 500px;
+        margin-bottom: 25px;
+    }
+
+    .contain-tour__date__soldOut {
+        padding: 0px 10px;
+    }
+
+    .contain-row-ticket {
+        padding: 0px 10px;
+    }
+
+    .row-ticket {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .row-ticket__col {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 100%;
+    }
+
+    .row-ticket__col__img {
+        width: 100%;
+    }
+
+    .row-ticket__col__img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .body-contact {
+        flex-direction: column;
+    }
+
+    .contain-body-contact {
+        padding: 0px 10px;
+    }
+
+    .contact__address {
+        width: 100%;
+    }
+
+    .contact__send-email {
+        width: 100%;
+    }
+
+    .contact__email {
+        padding: 5px 0px 5px 0px;
+    }
+
+    .input-message {
+        padding: 0px 0px 0px 0px
+    }
+
+}
+
+/* -------tablet high resolution----------- */
+@media only screen and (max-width : 1024px) and (min-width : 764px) {
+    .the-band__introduce__content {
+        width: 100%;
+    }
+
+    .the-band__introduce {
+        padding: 0 18px;
+    }
+
+    .contain-tour__date__soldOut {
+        padding: 0px 10%;
+    }
+
+    .contain-body-contact {
+        padding: 0px 10%;
+    }
+
+    .contain-row-ticket {
+        padding: 0px 10%;
+    }
+
+    .show-buy-ticket {
+        width: 90%;
+    }
+}
+
+/* -------tablet low resolution---- */
+@media only screen and (max-width : 765px) and (min-width: 585px) {
+    .the-band__introduce__content {
+        width: 100%;
+    }
+
+    .the-band__name-img__row__col {
+        width: 50%;
+        height: 100%;
+
+
+    }
+
+    .contain-body-contact {
+        padding: 0px 8%;
+    }
+
+    .contain-tour__date__soldOut {
+        padding: 0px 8%;
+    }
+
+    .contain-row-ticket {
+        padding: 0px 8%;
+    }
+
+
+
+    .the-band__introduce {
+        padding: 0 18px;
+    }
+
+    .show-buy-ticket {
+        width: 90%;
+    }
+}
